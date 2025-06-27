@@ -6,19 +6,7 @@ This project demonstrates how to containerize two microservices (Go & Python) us
 
 ## 📂 Project Structure
 
-Newassignment/
-├── service_1/ # Go-based microservice
-│ ├── main.go
-│ └── Dockerfile
-├── service_2/ # Python Flask microservice using UV
-│ ├── app.py
-│ └── Dockerfile
-├── nginx/ # NGINX reverse proxy configuration
-│ ├── nginx.conf
-│ └── Dockerfile
-├── docker-compose.yml # Manages all 3 containers
-└── README.md # Project guide
-
+<pre><code>```bash Newassignment/ ├── service_1/ # Go-based microservice │ ├── main.go │ └── Dockerfile ├── service_2/ # Python Flask microservice using UV │ ├── app.py │ └── Dockerfile ├── nginx/ # NGINX reverse proxy configuration │ ├── nginx.conf │ └── Dockerfile ├── docker-compose.yml # Manages all 3 containers └── README.md # Project guide ```</code></pre>
 
 ---
 
