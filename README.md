@@ -1,6 +1,31 @@
-#  Dockerized Microservices Project with NGINX Reverse Proxy
-
 This project demonstrates how to containerize two microservices (Go & Python) using Docker, manage them with Docker Compose, and expose them via NGINX as a reverse proxy.
+
+# 🧰 Prerequisites
+Before running this project, ensure you have the following installed on your system:
+
+✅ Git – for cloning the repository
+#  Dockerized Microservices Project with NGINX Reverse Proxy
+```bash
+sudo apt update && sudo apt install git -y
+```
+✅ Docker – to build and run containers
+Install Docker using the official script:
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+```
+✅ Docker Compose – to orchestrate multi-container apps
+Install Docker Compose:
+```bash
+sudo apt install docker-compose -y
+```
+✅ Expose port 8080 in AWS EC2 – Make sure your EC2 Security Group allows inbound traffic on port 8080.
+
+✅ (Optional) Public IP or Domain – If hosting on a cloud VM, know your instance's public IP.
+
+bash
+Copy code
+
 
 ---
 
