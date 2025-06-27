@@ -12,25 +12,26 @@ What It Does
 2. Redirects incoming HTTP requests to the appropriate internal services based on URL paths.
 
 📄 nginx.conf Overview
-
+```bash
 /service1/ routes to your Go microservice (service1) running on port 8001.
 
 /service2/ routes to your Flask+uv microservice (service2) on port 8002.
-
+```
 🐳 Dockerfile (for NGINX container)
-
+```bash
   FROM nginx:latest
 
   COPY nginx.conf /etc/nginx/nginx.conf
-
+```
 This Dockerfile uses the official nginx image and replaces its default configuration with the one in nginx.conf.
 
 How It Integrates
 The nginx container is started by docker-compose.yml and depends on service1 and service2.
 
 It makes those services available at:
+```bash
 
 http://<IP>:8080/service1/hello
 
 http://<IP>:8080/service2/ping
-
+```
