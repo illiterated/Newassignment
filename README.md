@@ -76,7 +76,7 @@ Newassignment/
    docker-compose up -d
 
 2. **Start the entire system**
-   docker-compose up -d
+   docker-compose up --build -d 
 
 3. **Access Service via Browser**
    http://localhost:8080/service1/hello
