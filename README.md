@@ -72,13 +72,12 @@ Newassignment/
    ```bash
    git clone https://github.com/illiterated/Newassignment.git
    cd Newassignment
-
-   docker-compose up -d
-
+  
 2. **Start the entire system**
-   docker-compose up --build -d 
-
-3. **Access Service via Browser**
+   ```bash
+   docker-compose up --build -d
+   ```
+4. **Access Service via Browser**
    http://localhost:8080/service1/hello
    http://localhost:8080/service2/ping
 
